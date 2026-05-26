@@ -7,6 +7,7 @@ const links = [
   { name: 'accordion', href: 'accordion' },
   { name: 'alert', href: 'alert' },
   { name: 'alert dialog', href: 'alert-dialog' },
+  { name: 'aspect ratio', href: 'aspect-ratio' },
 ];
 
 export default function DashboardLayout({
