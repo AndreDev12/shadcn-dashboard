@@ -12,6 +12,7 @@ const links = [
   { name: 'aspect ratio', href: 'aspect-ratio' },
   { name: 'badge', href: 'badge' },
   { name: 'avatar', href: 'avatar' },
+  { name: 'breadcrumb', href: 'breadcrumb' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
