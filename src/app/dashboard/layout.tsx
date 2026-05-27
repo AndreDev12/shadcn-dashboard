@@ -3,11 +3,14 @@
 
 import Link from 'next/link';
 
+import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui';
+
 const links = [
   { name: 'accordion', href: 'accordion' },
   { name: 'alert', href: 'alert' },
   { name: 'alert dialog', href: 'alert-dialog' },
   { name: 'aspect ratio', href: 'aspect-ratio' },
+  { name: 'avatar', href: 'avatar' },
 ];
 
 export default function DashboardLayout({
@@ -95,10 +98,10 @@ export default function DashboardLayout({
               </a>
             </div>
             <div className="flex items-center">
-              {/* User Avatar */}
-              <div className="bg-blue-500 text-white p-2 rounded-full w-12 h-12 flex items-center justify-center">
-                AH
-              </div>
+              <Avatar>
+                <AvatarImage src="https://github.com/shadcn.png" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
             </div>
           </div>
         </div>
