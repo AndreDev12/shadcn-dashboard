@@ -41,37 +41,33 @@ const buttonVariants = cva(
   },
 );
 
-type ButtonProps = React.ComponentPropsWithoutRef<'button'> &
+function Button({
+  className,
+  variant = 'default',
+  size = 'default',
+  asChild = false,
+  capitalize = false,
+  ...props
+}: React.ComponentProps<'button'> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean;
-  };
+    capitalize?: boolean;
+  }) {
+  const Comp = asChild ? Slot.Root : 'button';
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  (
-    {
-      className,
-      variant = 'default',
-      size = 'default',
-      asChild = false,
-      ...props
-    },
-    ref,
-  ) => {
-    const Comp = asChild ? Slot.Root : 'button';
-
-    return (
-      <Comp
-        ref={ref}
-        data-slot="button"
-        data-variant={variant}
-        data-size={size}
-        className={cn(buttonVariants({ variant, size, className }))}
-        {...props}
-      />
-    );
-  },
-);
-
-Button.displayName = 'Button';
+  return (
+    <Comp
+      data-slot="button"
+      data-variant={variant}
+      data-size={size}
+      className={cn(
+        buttonVariants({ variant, size }),
+        capitalize && 'capitalize',
+        className,
+      )}
+      {...props}
+    />
+  );
+}
 
 export { Button, buttonVariants };
