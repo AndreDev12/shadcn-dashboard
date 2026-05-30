@@ -15,6 +15,7 @@ const links = [
   { name: 'breadcrumb', href: 'breadcrumb' },
   { name: 'button', href: 'button' },
   { name: 'button group', href: 'button-group' },
+  { name: 'calendar', href: 'calendar' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({

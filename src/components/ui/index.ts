@@ -15,3 +15,4 @@ export * from './separator';
 export * from './spinner';
 export * from './textarea';
 export * from './tooltip';
+export * from './calendar';
