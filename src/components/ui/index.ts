@@ -16,3 +16,4 @@ export * from './spinner';
 export * from './textarea';
 export * from './tooltip';
 export * from './calendar';
+export * from './card';
