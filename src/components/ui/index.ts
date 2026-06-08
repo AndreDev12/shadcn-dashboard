@@ -18,3 +18,4 @@ export * from './tooltip';
 export * from './calendar';
 export * from './card';
 export * from './carousel';
+export * from './chart';
