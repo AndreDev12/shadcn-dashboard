@@ -19,3 +19,7 @@ export * from './calendar';
 export * from './card';
 export * from './carousel';
 export * from './chart';
+export * from './checkbox';
+export * from './field';
+export * from './label';
+export * from './table';
