@@ -20,6 +20,7 @@ const links = [
   { name: 'carousel', href: 'carousel' },
   { name: 'chart', href: 'chart' },
   { name: 'checkbox', href: 'checkbox' },
+  { name: 'collapsible', href: 'collapsible' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
