@@ -46,12 +46,10 @@ function Button({
   variant = 'default',
   size = 'default',
   asChild = false,
-  capitalize = false,
   ...props
 }: React.ComponentProps<'button'> &
   VariantProps<typeof buttonVariants> & {
     asChild?: boolean;
-    capitalize?: boolean;
   }) {
   const Comp = asChild ? Slot.Root : 'button';
 
@@ -60,10 +58,7 @@ function Button({
       data-slot="button"
       data-variant={variant}
       data-size={size}
-      className={cn(
-        buttonVariants({ variant, size, className }),
-        capitalize && 'capitalize',
-      )}
+      className={cn(buttonVariants({ variant, size, className }))}
       {...props}
     />
   );
