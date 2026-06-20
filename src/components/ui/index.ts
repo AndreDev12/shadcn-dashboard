@@ -25,3 +25,5 @@ export * from './label';
 export * from './table';
 export * from './collapsible';
 export * from './combobox';
+export * from './command';
+export * from './dialog';

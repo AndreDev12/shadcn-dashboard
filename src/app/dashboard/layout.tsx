@@ -22,6 +22,7 @@ const links = [
   { name: 'checkbox', href: 'checkbox' },
   { name: 'collapsible', href: 'collapsible' },
   { name: 'combobox', href: 'combobox' },
+  { name: 'command', href: 'command' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
