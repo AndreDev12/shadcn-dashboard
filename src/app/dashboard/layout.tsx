@@ -23,6 +23,7 @@ const links = [
   { name: 'collapsible', href: 'collapsible' },
   { name: 'combobox', href: 'combobox' },
   { name: 'command', href: 'command' },
+  { name: 'context menu', href: 'context-menu' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
