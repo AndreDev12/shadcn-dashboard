@@ -4,7 +4,12 @@ const nextConfig: NextConfig = {
   /* config options here */
   reactCompiler: true,
   images: {
-    remotePatterns: [new URL('https://avatar.vercel.sh/shadcn1')],
+    remotePatterns: [
+      new URL('https://avatar.vercel.sh/shadcn1'),
+      new URL(
+        'https://images.unsplash.com/photo-**?w=900&auto=format&fit=crop&q=80',
+      ),
+    ],
   },
 };
 
