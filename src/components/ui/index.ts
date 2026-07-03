@@ -30,3 +30,4 @@ export * from './dialog';
 export * from './context-menu';
 export * from './data-table';
 export * from './sonner';
+export * from './attachment';

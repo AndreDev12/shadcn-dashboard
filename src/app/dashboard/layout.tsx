@@ -26,6 +26,7 @@ const links = [
   { name: 'context menu', href: 'context-menu' },
   { name: 'data table one', href: 'data-table-one' },
   { name: 'data table two', href: 'data-table-two' },
+  { name: 'attachment', href: 'attachment' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
