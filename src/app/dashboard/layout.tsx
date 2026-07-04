@@ -27,6 +27,7 @@ const links = [
   { name: 'data table one', href: 'data-table-one' },
   { name: 'data table two', href: 'data-table-two' },
   { name: 'attachment', href: 'attachment' },
+  { name: 'bubble', href: 'bubble' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({

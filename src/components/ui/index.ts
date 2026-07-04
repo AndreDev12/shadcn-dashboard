@@ -31,3 +31,4 @@ export * from './context-menu';
 export * from './data-table';
 export * from './sonner';
 export * from './attachment';
+export * from './bubble';
