@@ -29,6 +29,7 @@ const links = [
   { name: 'attachment', href: 'attachment' },
   { name: 'bubble', href: 'bubble' },
   { name: 'date picker', href: 'date-picker' },
+  { name: 'dialog', href: 'dialog' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
