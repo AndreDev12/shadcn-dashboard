@@ -33,3 +33,4 @@ export * from './sonner';
 export * from './attachment';
 export * from './bubble';
 export * from './popover';
+export * from './direction';

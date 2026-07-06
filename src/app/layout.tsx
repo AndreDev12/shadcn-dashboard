@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Geist } from 'next/font/google';
-import { TooltipProvider } from '@/components/ui';
 
+import { TooltipProvider, DirectionProvider } from '@/components/ui';
 import './globals.css';
 import { cn } from '@/lib';
 
@@ -20,9 +20,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn('font-sans', geist.variable)}>
+    <html lang="en" className={cn('font-sans', geist.variable)} dir="ltr">
       <body className={inter.className}>
-        <TooltipProvider>{children}</TooltipProvider>
+        <DirectionProvider dir="rtl" direction="rtl">
+          <TooltipProvider>{children}</TooltipProvider>
+        </DirectionProvider>
       </body>
     </html>
   );
