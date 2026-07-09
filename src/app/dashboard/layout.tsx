@@ -31,6 +31,8 @@ const links = [
   { name: 'date picker', href: 'date-picker' },
   { name: 'dialog', href: 'dialog' },
   { name: 'direction', href: 'direction' },
+  { name: 'drawer with radix', href: 'drawer-with-radix' },
+  { name: 'drawer with base ui', href: 'drawer-with-base-ui' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({

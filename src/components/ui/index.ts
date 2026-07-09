@@ -34,3 +34,5 @@ export * from './attachment';
 export * from './bubble';
 export * from './popover';
 export * from './direction';
+export * from './drawer-with-radix';
+export * from './drawer-with-base';
