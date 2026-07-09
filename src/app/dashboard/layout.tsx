@@ -33,6 +33,7 @@ const links = [
   { name: 'direction', href: 'direction' },
   { name: 'drawer with radix', href: 'drawer-with-radix' },
   { name: 'drawer with base ui', href: 'drawer-with-base-ui' },
+  { name: 'dropdown menu', href: 'dropdown-menu' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
