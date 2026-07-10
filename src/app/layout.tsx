@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={cn('font-sans', geist.variable)} dir="ltr">
       <body className={inter.className}>
-        <DirectionProvider dir="rtl" direction="rtl">
+        <DirectionProvider dir="ltr" direction="ltr">
           <TooltipProvider>{children}</TooltipProvider>
         </DirectionProvider>
       </body>
