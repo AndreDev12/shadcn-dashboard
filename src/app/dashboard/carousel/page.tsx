@@ -134,7 +134,7 @@ export default function Page() {
         className="w-full max-w-48 sm:max-w-xs"
         // plugins={[Autoplay({ delay: 2000 })]}
         opts={{ loop: true }}
-        delay={1500}
+        delay={5000}
       >
         <CarouselContent>
           {Array.from({ length: 5 }).map((_, index) => (
