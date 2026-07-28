@@ -32,6 +32,7 @@ type BugReportFormSchema = z.infer<typeof bugReportFormSchema>;
 export default function Page() {
   const form = useForm<BugReportFormSchema>({
     resolver: zodResolver(bugReportFormSchema),
+    mode: 'onSubmit', // for default
     defaultValues: {
       title: '',
       description: '',
