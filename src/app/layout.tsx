@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter, Geist } from 'next/font/google';
 
-import { TooltipProvider, DirectionProvider } from '@/components/ui';
+import { TooltipProvider, DirectionProvider, Toaster } from '@/components/ui';
 import './globals.css';
 import { cn } from '@/lib';
 
@@ -25,6 +25,7 @@ export default function RootLayout({
         <DirectionProvider dir="ltr" direction="ltr">
           <TooltipProvider>{children}</TooltipProvider>
         </DirectionProvider>
+        <Toaster />
       </body>
     </html>
   );

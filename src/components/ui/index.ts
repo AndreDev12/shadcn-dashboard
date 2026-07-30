@@ -39,3 +39,4 @@ export * from './drawer-with-radix';
 export * from './empty';
 export * from './switch';
 export * from './radio-group';
+export * from './toast';
