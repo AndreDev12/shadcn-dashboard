@@ -40,3 +40,4 @@ export * from './empty';
 export * from './switch';
 export * from './radio-group';
 export * from './toast';
+export * from './hover-card';
