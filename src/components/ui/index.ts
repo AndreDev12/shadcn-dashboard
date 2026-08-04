@@ -41,3 +41,4 @@ export * from './switch';
 export * from './radio-group';
 export * from './toast';
 export * from './hover-card';
+export * from './input-group';

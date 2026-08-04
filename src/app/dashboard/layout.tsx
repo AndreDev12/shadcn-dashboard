@@ -40,6 +40,7 @@ const links = [
   { name: 'toast', href: 'toast' },
   { name: 'hover card', href: 'hover-card' },
   { name: 'input', href: 'input' },
+  { name: 'input group', href: 'input-group' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
