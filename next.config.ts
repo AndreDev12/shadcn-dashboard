@@ -9,6 +9,9 @@ const nextConfig: NextConfig = {
       new URL(
         'https://images.unsplash.com/photo-**?w=900&auto=format&fit=crop&q=80',
       ),
+      new URL(
+        'https://images.unsplash.com/photo-**?q=80&w=640&auto=format&fit=crop',
+      ),
     ],
   },
 };
