@@ -43,6 +43,7 @@ const links = [
   { name: 'input group', href: 'input-group' },
   { name: 'input otp', href: 'input-otp' },
   { name: 'item', href: 'item' },
+  { name: 'kbd', href: 'kbd' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({

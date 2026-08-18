@@ -45,3 +45,4 @@ export * from './input-group';
 export * from './input-otp';
 export * from './input';
 export * from './item';
+export * from './kbd';
