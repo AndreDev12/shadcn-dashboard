@@ -46,3 +46,4 @@ export * from './input-otp';
 export * from './input';
 export * from './item';
 export * from './kbd';
+export * from './marker';
