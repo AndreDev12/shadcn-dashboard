@@ -46,7 +46,7 @@ function ChartContainer({
   config,
   initialDimension = INITIAL_DIMENSION,
   ...props
-}: Omit<React.ComponentProps<'div'>, 'ref'> & {
+}: React.ComponentProps<'div'> & {
   config: ChartConfig;
   children: React.ComponentProps<
     typeof RechartsPrimitive.ResponsiveContainer

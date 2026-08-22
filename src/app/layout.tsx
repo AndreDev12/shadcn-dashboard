@@ -20,9 +20,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn('font-sans', geist.variable)} dir="ltr">
+    <html lang="en" className={cn('font-sans', geist.variable)} dir="rtl">
       <body className={inter.className}>
-        <DirectionProvider dir="ltr" direction="ltr">
+        <DirectionProvider direction="rtl">
           <TooltipProvider>{children}</TooltipProvider>
         </DirectionProvider>
         <Toaster />

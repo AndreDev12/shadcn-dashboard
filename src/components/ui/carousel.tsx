@@ -4,7 +4,6 @@ import * as React from 'react';
 import useEmblaCarousel, {
   type UseEmblaCarouselType,
 } from 'embla-carousel-react';
-import Autoplay from 'embla-carousel-autoplay';
 import { ChevronLeftIcon, ChevronRightIcon } from 'lucide-react';
 
 import { cn } from '@/lib';
@@ -19,7 +18,6 @@ type CarouselProps = {
   opts?: CarouselOptions;
   plugins?: CarouselPlugin;
   orientation?: 'horizontal' | 'vertical';
-  delay?: number;
   setApi?: (api: CarouselApi) => void;
 };
 
@@ -51,14 +49,8 @@ function Carousel({
   plugins,
   className,
   children,
-  delay,
   ...props
 }: React.ComponentProps<'div'> & CarouselProps) {
-  if (delay) {
-    plugins = plugins ?? [];
-    plugins.push(Autoplay({ delay }));
-  }
-
   const [carouselRef, api] = useEmblaCarousel(
     {
       ...opts,
@@ -103,7 +95,6 @@ function Carousel({
 
   React.useEffect(() => {
     if (!api) return;
-    // eslint-disable-next-line react-hooks/set-state-in-effect
     onSelect(api);
     api.on('reInit', onSelect);
     api.on('select', onSelect);

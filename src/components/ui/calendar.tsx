@@ -13,8 +13,8 @@ import {
   ChevronDownIcon,
 } from 'lucide-react';
 
-import { Button, buttonVariants } from '@/components/ui';
 import { cn } from '@/lib';
+import { Button, buttonVariants } from '@/components/ui';
 
 function Calendar({
   className,
@@ -91,8 +91,7 @@ function Calendar({
             : 'flex items-center gap-1 rounded-(--cell-radius) text-sm [&>svg]:size-3.5 [&>svg]:text-muted-foreground',
           defaultClassNames.caption_label,
         ),
-        // @ts-expect-error 'table' is supported by react-day-picker runtime but may be missing from its type definitions
-        table: 'w-full border-collapse',
+        month_grid: cn('w-full border-collapse', defaultClassNames.month_grid),
         weekdays: cn('flex', defaultClassNames.weekdays),
         weekday: cn(
           'flex-1 rounded-(--cell-radius) text-[0.8rem] font-normal text-muted-foreground select-none',
@@ -204,7 +203,6 @@ function CalendarDayButton({
 
   return (
     <Button
-      ref={ref}
       variant="ghost"
       size="icon"
       data-day={day.date.toLocaleDateString(locale?.code)}
