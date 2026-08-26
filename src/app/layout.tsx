@@ -1,12 +1,16 @@
 import type { Metadata } from 'next';
 import { Inter, Geist } from 'next/font/google';
 
-import { TooltipProvider, DirectionProvider, Toaster } from '@/components/ui';
-import './globals.css';
+import {
+  MessageScrollerProvider,
+  TooltipProvider,
+  DirectionProvider,
+  Toaster,
+} from '@/components/ui';
 import { cn } from '@/lib';
+import './globals.css';
 
 const geist = Geist({ subsets: ['latin'], variable: '--font-sans' });
-
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -23,7 +27,9 @@ export default function RootLayout({
     <html lang="en" className={cn('font-sans', geist.variable)} dir="ltr">
       <body className={inter.className}>
         <DirectionProvider direction="ltr">
-          <TooltipProvider>{children}</TooltipProvider>
+          <MessageScrollerProvider>
+            <TooltipProvider>{children}</TooltipProvider>
+          </MessageScrollerProvider>
         </DirectionProvider>
         <Toaster />
       </body>

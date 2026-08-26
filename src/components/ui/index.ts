@@ -49,3 +49,4 @@ export * from './kbd';
 export * from './marker';
 export * from './menubar';
 export * from './message';
+export * from './message-scroller';

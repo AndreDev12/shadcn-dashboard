@@ -4,3 +4,4 @@ export * from './example-attachment';
 export * from './example-drawer-with-radix';
 export * from './example-drawer-with-base';
 export * from './example-item';
+export * from './example-message-scroller';

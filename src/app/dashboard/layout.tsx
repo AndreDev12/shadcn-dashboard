@@ -48,6 +48,7 @@ const links = [
   { name: 'marker', href: 'marker' },
   { name: 'menubar', href: 'menubar' },
   { name: 'message', href: 'message' },
+  { name: 'message scroller', href: 'message-scroller' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
