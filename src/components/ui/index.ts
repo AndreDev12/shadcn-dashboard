@@ -51,3 +51,4 @@ export * from './menubar';
 export * from './message';
 export * from './message-scroller';
 export * from './native-select';
+export * from './navigation-menu';
