@@ -50,3 +50,4 @@ export * from './marker';
 export * from './menubar';
 export * from './message';
 export * from './message-scroller';
+export * from './native-select';
