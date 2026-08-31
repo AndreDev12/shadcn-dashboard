@@ -52,6 +52,7 @@ const links = [
   { name: 'native select', href: 'native-select' },
   { name: 'navigation menu', href: 'navigation-menu' },
   { name: 'pagination', href: 'pagination' },
+  { name: 'popover', href: 'popover' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
