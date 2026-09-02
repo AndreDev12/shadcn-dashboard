@@ -54,3 +54,4 @@ export * from './native-select';
 export * from './navigation-menu';
 export * from './pagination';
 export * from './progress';
+export * from './questionnaire';

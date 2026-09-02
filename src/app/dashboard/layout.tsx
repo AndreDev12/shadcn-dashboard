@@ -54,6 +54,7 @@ const links = [
   { name: 'pagination', href: 'pagination' },
   { name: 'popover', href: 'popover' },
   { name: 'progress', href: 'progress' },
+  { name: 'questionnaire', href: 'questionnaire' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
