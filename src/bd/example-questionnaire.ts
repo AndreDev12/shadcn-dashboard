@@ -1,4 +1,26 @@
-export const questionnaireItems = [
+interface QuestionnaireItems {
+  name: string;
+  required: boolean;
+  prompt: string;
+  description: string;
+  choices: {
+    value: string;
+    label: string;
+    description?: string;
+  }[];
+  input?: {
+    label: string;
+    placeholder: string;
+  };
+}
+
+interface MultipleSelectionItems {
+  choices: { value: string }[];
+  name: string;
+  required: boolean;
+}
+
+export const questionnaireItems: QuestionnaireItems[] = [
   {
     name: 'direction',
     required: true,
@@ -28,5 +50,18 @@ export const questionnaireItems = [
       { value: 'focused', label: 'Focused' },
       { value: 'complete', label: 'Complete flow' },
     ],
+  },
+];
+
+export const multipleSelectionItems: MultipleSelectionItems[] = [
+  {
+    choices: [
+      { value: 'source' },
+      { value: 'tests' },
+      { value: 'docs' },
+      { value: 'history' },
+    ],
+    name: 'context',
+    required: true,
   },
 ] as const;
