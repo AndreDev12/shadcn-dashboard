@@ -55,3 +55,4 @@ export * from './navigation-menu';
 export * from './pagination';
 export * from './progress';
 export * from './questionnaire';
+export * from './resizable';

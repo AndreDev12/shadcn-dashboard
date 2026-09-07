@@ -56,6 +56,7 @@ const links = [
   { name: 'progress', href: 'progress' },
   { name: 'questionnaire', href: 'questionnaire' },
   { name: 'radio group', href: 'radio-group' },
+  { name: 'resizable', href: 'resizable' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
