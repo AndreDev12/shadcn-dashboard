@@ -14,10 +14,15 @@ interface QuestionnaireItems {
   };
 }
 
-interface MultipleSelectionItems {
+interface GenericItems {
   choices: { value: string }[];
   name: string;
   required: boolean;
+}
+
+interface ExplicitSkipItems {
+  name: string;
+  required?: boolean;
 }
 
 export const questionnaireItems: QuestionnaireItems[] = [
@@ -53,7 +58,7 @@ export const questionnaireItems: QuestionnaireItems[] = [
   },
 ];
 
-export const multipleSelectionItems: MultipleSelectionItems[] = [
+export const multipleSelectionItems: GenericItems[] = [
   {
     choices: [
       { value: 'source' },
@@ -64,4 +69,22 @@ export const multipleSelectionItems: MultipleSelectionItems[] = [
     name: 'context',
     required: true,
   },
+] as const;
+
+export const freeFormItems: GenericItems[] = [
+  {
+    choices: [
+      { value: 'incremental' },
+      { value: 'module' },
+      { value: 'rewrite' },
+    ],
+    name: 'approach',
+    required: true,
+  },
+] as const;
+
+export const explicitSkipItems: ExplicitSkipItems[] = [
+  { name: 'task', required: true },
+  { name: 'constraints' },
+  { name: 'review', required: true },
 ] as const;
