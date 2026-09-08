@@ -7,3 +7,4 @@ export * from './example-item';
 export * from './example-message-scroller';
 export * from './example-navigation-menu';
 export * from './example-questionnaire';
+export * from './example-scroll-area';
