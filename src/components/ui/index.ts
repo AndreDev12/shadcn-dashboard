@@ -58,4 +58,5 @@ export * from './questionnaire';
 export * from './resizable';
 export * from './scroll-area';
 export * from './sheet';
+export * from './sidebar';
 export * from './skeleton';
