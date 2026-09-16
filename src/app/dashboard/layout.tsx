@@ -66,6 +66,7 @@ const links = [
   { name: 'spinner', href: 'spinner' },
   { name: 'switch', href: 'switch' },
   { name: 'table', href: 'table' },
+  { name: 'tabs', href: 'tabs' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
