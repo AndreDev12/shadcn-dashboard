@@ -1,5 +1,5 @@
 export * from './example-chart';
-export * from './example-table';
+export * from './example-data-table';
 export * from './example-attachment';
 export * from './example-drawer-with-radix';
 export * from './example-drawer-with-base';
@@ -9,3 +9,4 @@ export * from './example-navigation-menu';
 export * from './example-questionnaire';
 export * from './example-scroll-area';
 export * from './example-select';
+export * from './example-table';

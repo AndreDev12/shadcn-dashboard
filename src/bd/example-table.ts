@@ -1,101 +1,51 @@
-export const tableData = [
-  {
-    id: '1',
-    name: 'Sarah Chen',
-    email: 'sarah.chen@example.com',
-    role: 'Admin',
-  },
-  {
-    id: '2',
-    name: 'Marcus Rodriguez',
-    email: 'marcus.rodriguez@example.com',
-    role: 'User',
-  },
-  {
-    id: '3',
-    name: 'Priya Patel',
-    email: 'priya.patel@example.com',
-    role: 'User',
-  },
-  {
-    id: '4',
-    name: 'David Kim',
-    email: 'david.kim@example.com',
-    role: 'Editor',
-  },
-];
+interface Invoice {
+  invoice: string;
+  paymentStatus: string;
+  totalAmount: string;
+  paymentMethod: string;
+}
 
-export const payments = [
+export const invoices: Invoice[] = [
   {
-    id: '728ed52f',
-    amount: 100,
-    status: 'pending',
-    email: 'maxima@example.com',
+    invoice: 'INV001',
+    paymentStatus: 'Paid',
+    totalAmount: '$250.00',
+    paymentMethod: 'Credit Card',
   },
   {
-    id: '489e1d42',
-    amount: 125,
-    status: 'processing',
-    email: 'emma@gmail.com',
+    invoice: 'INV002',
+    paymentStatus: 'Pending',
+    totalAmount: '$150.00',
+    paymentMethod: 'PayPal',
   },
   {
-    id: '728ed52f',
-    amount: 100,
-    status: 'pending',
-    email: 'martas@example.com',
+    invoice: 'INV003',
+    paymentStatus: 'Unpaid',
+    totalAmount: '$350.00',
+    paymentMethod: 'Bank Transfer',
   },
   {
-    id: '489e1d42',
-    amount: 125,
-    status: 'processing',
-    email: 'ezequiel@gmail.com',
+    invoice: 'INV004',
+    paymentStatus: 'Paid',
+    totalAmount: '$450.00',
+    paymentMethod: 'Credit Card',
   },
   {
-    id: '728ed52f',
-    amount: 100,
-    status: 'pending',
-    email: 'federica@example.com',
+    invoice: 'INV005',
+    paymentStatus: 'Paid',
+    totalAmount: '$550.00',
+    paymentMethod: 'PayPal',
   },
   {
-    id: '489e1d42',
-    amount: 125,
-    status: 'processing',
-    email: 'blanca@gmail.com',
+    invoice: 'INV006',
+    paymentStatus: 'Pending',
+    totalAmount: '$200.00',
+    paymentMethod: 'Bank Transfer',
   },
   {
-    id: '728ed52f',
-    amount: 100,
-    status: 'pending',
-    email: 'damasco@example.com',
-  },
-  {
-    id: '489e1d42',
-    amount: 125,
-    status: 'processing',
-    email: 'carolina@gmail.com',
-  },
-  {
-    id: '728ed52f',
-    amount: 100,
-    status: 'pending',
-    email: 'andre@example.com',
-  },
-  {
-    id: '489e1d42',
-    amount: 125,
-    status: 'processing',
-    email: 'zandra@gmail.com',
-  },
-  {
-    id: '728ed52f',
-    amount: 100,
-    status: 'pending',
-    email: 'celeste@example.com',
-  },
-  {
-    id: '489e1d42',
-    amount: 125,
-    status: 'processing',
-    email: 'romina@gmail.com',
+    invoice: 'INV007',
+    paymentStatus: 'Unpaid',
+    totalAmount: '$300.00',
+    paymentMethod: 'Credit Card',
   },
 ];
