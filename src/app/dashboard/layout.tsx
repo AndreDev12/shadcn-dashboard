@@ -68,6 +68,7 @@ const links = [
   { name: 'table', href: 'table' },
   { name: 'tabs', href: 'tabs' },
   { name: 'textarea', href: 'textarea' },
+  { name: 'toggle', href: 'toggle' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({

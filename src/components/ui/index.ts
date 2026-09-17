@@ -62,3 +62,4 @@ export * from './sidebar';
 export * from './skeleton';
 export * from './slider';
 export * from './tabs';
+export * from './toggle';
