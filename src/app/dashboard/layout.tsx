@@ -70,6 +70,7 @@ const links = [
   { name: 'textarea', href: 'textarea' },
   { name: 'toggle', href: 'toggle' },
   { name: 'toggle group', href: 'toggle-group' },
+  { name: 'tooltip', href: 'tooltip' },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({
